@@ -1,0 +1,28 @@
+.profile__info-edit {
+  min-width: 10px;
+  min-height: 10px; /* height is to size an image, not text */
+  padding: 7px;
+  align-self: center;
+  background-color: #2A2C2F;
+  /* box styling */
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 768px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 768px */
+
+/* resolution less than 320px */
+@media screen and (max-width: 320px) {
+  .profile__info-edit {
+    min-width: 7.5px;
+    min-height: 7.5px;
+    padding: 5.25px;
+  }
+}

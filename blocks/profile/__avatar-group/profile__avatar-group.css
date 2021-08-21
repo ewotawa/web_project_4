@@ -1,12 +1,9 @@
-.profile {
-  max-width: 880px;
-  padding: 36.25px 0 46.25px 0;
-  margin: 0 auto;
+.profile__avatar-group {
   /* flexbox */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: left;
 }
 
 /* ----- MEDIA QUERIES ----- */
@@ -16,14 +13,10 @@
 
 /* resolution more than 320px, fewer than 880px */
 @media screen and (max-width: 880px) {
-  .profile {
-    width: auto;
-    margin: 0 19px;
-    padding: 38.25px 0 36px 0;
-    /* flexbox */
+  .profile__avatar-group {
     flex-direction: column;
+    justify-content: center;
   }
 }
 
-
-/* resolution more than 320px, fewer than 880px */
+/* resolution less than 320px */
