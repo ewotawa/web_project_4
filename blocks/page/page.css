@@ -1,0 +1,22 @@
+.page {
+  background-color: #2A2C2F;
+  color: #FFFFFF;
+  /* typography */
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 320px, use defaults */
+
+/* resolution 320px or fewer */
+@media screen and (max-width: 320px) {
+  .page {
+    width: auto;
+  }
+}
+
+
