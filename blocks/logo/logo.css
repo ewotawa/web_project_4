@@ -1,0 +1,27 @@
+.logo {
+  margin: 45px 0 41px 0;
+  width: 173px;
+  height: 33px; /* height is to size an image, not text */
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 320px, fewer than 880px */
+@media screen and (max-width: 880px) {
+  .logo {
+    margin: 45px 0 41px 27px;
+  }
+}
+
+/* resolution more than 320px, fewer than 880px */
+@media screen and (max-width: 320px) {
+  .logo {
+    margin: 28px 0 32px 27px;
+    width: 126px;
+    height: 24px;
+  }
+}
+
