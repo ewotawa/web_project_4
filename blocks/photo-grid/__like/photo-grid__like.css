@@ -5,13 +5,6 @@
   padding: 0;
   /* background image */
   background-image: url('../../../images/like.svg');
-  /* hover animation */
-  opacity: 1;
-  transition: opacity 1s ease-out;
-}
-
-.photo-grid__like:hover {
-  opacity: 0.6;
 }
 
 
