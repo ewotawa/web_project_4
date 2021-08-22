@@ -7,6 +7,13 @@
   border: 2px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 2px;
+  /* hover animation */
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.profile__add-button:hover {
+  opacity: 0.6;
 }
 
 /* ----- MEDIA QUERIES ----- */

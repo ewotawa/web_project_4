@@ -2,6 +2,7 @@
   color: #000000;
   margin: 0;
   padding: 0;
+  max-width: calc(282px - 21px - 15px - 21px);
   /* text overflow */
   text-overflow: ellipsis;
   white-space: nowrap;
