@@ -1,0 +1,24 @@
+.photo-grid__title {
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  /* text overflow */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  /* typography */
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */

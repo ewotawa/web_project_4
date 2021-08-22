@@ -1,0 +1,16 @@
+.photo-grid__like {
+  width: 21px;
+  height: 19px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */
