@@ -1,0 +1,26 @@
+.photo-grid__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 320px, fewer than 880px */
+@media screen and (max-width: 880px) {
+  .photo-grid__list {
+    /* flexbox */
+    justify-content: space-evenly;
+  }
+}
+
+
+/* resolution more than 320px, fewer than 880px */

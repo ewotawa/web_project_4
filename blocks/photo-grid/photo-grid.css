@@ -1,0 +1,21 @@
+.photo-grid {
+  max-width: 880px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 320px, fewer than 880px */
+@media screen and (max-width: 880px) {
+  .photo-grid {
+    max-width: unset;
+    margin: 0 27px;
+  }
+}
+
+
+/* resolution more than 320px, fewer than 880px */

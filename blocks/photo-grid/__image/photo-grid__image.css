@@ -1,0 +1,14 @@
+.photo-grid__image {
+  max-width: 282px;
+  max-height: 282px;
+  object-fit: contain;
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */
