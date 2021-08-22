@@ -8,6 +8,7 @@
 @import url('../blocks/form/form.css');
 @import url('../blocks/form/__modal/form__modal.css');
 @import url('../blocks/form/__close/form__close.css');
+@import url('../blocks/form/__title/form__title.css');
 
 @import url('../blocks/header/header.css');
 @import url('../blocks/header/__horiz-rule/header__horiz-rule.css');

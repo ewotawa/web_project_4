@@ -8,3 +8,19 @@
   border-radius: 10px;
   max-width: 430px;
 }
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 440px */
+@media screen and (max-width: 440px) {
+  .form__modal {
+    max-width: 282px;
+  }
+}
+
+/* resolution more than 320px, fewer than 440px */
