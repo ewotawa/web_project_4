@@ -5,6 +5,10 @@
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__copyright/footer__copyright.css');
 
+@import url('../blocks/form/form.css');
+@import url('../blocks/form/__modal/form__modal.css');
+@import url('../blocks/form/__close/form__close.css');
+
 @import url('../blocks/header/header.css');
 @import url('../blocks/header/__horiz-rule/header__horiz-rule.css');
 
