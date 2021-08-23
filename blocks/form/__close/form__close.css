@@ -6,3 +6,20 @@
   float: right;
   margin: -40px;
 }
+
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 550px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 550px */
+@media screen and (max-width: 550px) {
+  .form__close {
+    margin: -40px 0;
+  }
+}
+
+/* resolution fewer than 320px */

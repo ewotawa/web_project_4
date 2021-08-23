@@ -14,7 +14,7 @@
 
 /* anything larger than 880px, use defaults */
 
-/* resolution more than 320px, fewer than 880px */
+/* resolution more than 440px, fewer than 880px */
 
 /* resolution more than 320px, fewer than 440px */
 @media screen and (max-width: 440px) {
@@ -23,4 +23,4 @@
   }
 }
 
-/* resolution more than 320px, fewer than 440px */
+/* resolution fewer than 320px */
