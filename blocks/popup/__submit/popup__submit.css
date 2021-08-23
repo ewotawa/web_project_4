@@ -1,4 +1,4 @@
-.form__submit {
+.popup__submit {
   min-width: 358px;
   margin: calc(48px - 29.74px) 36px 36.51px;
   padding: 13.66px 0 18.49px;
@@ -23,7 +23,7 @@
 
 /* resolution more than 320px, fewer than 440px */
 @media screen and (max-width: 440px) {
-  .form__submit {
+  .popup__submit {
     min-width: 238px;
     margin: calc(46px - 30px) 22px 25px;
     padding: 14px 0;

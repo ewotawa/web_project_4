@@ -1,6 +1,6 @@
 /* reference: https://www.w3schools.com/howto/howto_css_modals.asp */
 
-.form__modal {
+.popup__container {
   background: #FFFFFF;
   opacity: 1;
   z-index: 2;
@@ -18,7 +18,7 @@
 
 /* resolution more than 320px, fewer than 440px */
 @media screen and (max-width: 440px) {
-  .form__modal {
+  .popup__container {
     max-width: 282px;
   }
 }
