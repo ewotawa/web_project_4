@@ -1,0 +1,25 @@
+.profile__name-edit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 768px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 880px */
+
+/* resolution less than 320px */
+@media screen and (max-width: 320px) {
+  .profile__name-edit {
+    margin: 0 auto;
+    padding: 26.25px 0 14px;
+  }
+}
