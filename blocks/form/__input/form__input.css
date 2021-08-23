@@ -1,0 +1,31 @@
+.form__input {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  min-width: 358px;
+  margin: 0 36px 29.74px;
+  padding: 0 0 13.26px;
+  color: #000000;
+  /* typography */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/* anything larger than 880px, use defaults */
+
+/* resolution more than 440px, fewer than 880px */
+
+/* resolution more than 320px, fewer than 440px */
+@media screen and (max-width: 440px) {
+  .form__input {
+    min-width: 238px;
+    margin: 0 22px 30px;
+  }
+}
+
+/* resolution fewer than 320px */
