@@ -1,20 +1,23 @@
 /* Opening and Closing the Popup Box */
 
-/* ----- open ----- */
-
-let popupButton = document.querySelector('.profile__info-edit');
-
 function popupToggle() {
   // get the element for the modal window
   let modalElement = document.querySelector('.popup');
-  // open popup by adding modifier
-  modalElement.classList.add('popup_opened');
+  // toggle the class for modal visibility
+  modalElement.classList.toggle('popup_opened');
 }
 
-popupButton.addEventListener('click', popupToggle);
+/* ----- open ----- */
+
+let popupOpenButton = document.querySelector('.profile__info-edit');
+
+popupOpenButton.addEventListener('click', popupToggle);
 
 /* ----- close ----- */
 
+let popupCloseButton = document.querySelector('.popup__close');
+
+popupCloseButton.addEventListener('click', popupToggle);
 
 
 /* Form Fields */
