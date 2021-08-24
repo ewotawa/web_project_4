@@ -1,7 +1,6 @@
 .profile__info-edit {
   width: 24px;
   height: 24px; /* height is to size an image, not text */
-  box-sizing: border-box;
   background-color: #000000;
   background-image: url('../../../images/edit.svg');
   background-repeat: no-repeat;
