@@ -24,6 +24,19 @@ popupCloseButton.addEventListener('click', popupToggle);
 /* Once the form has been opened, the "Name" and "About me" fields must be filled in with the values displayed on the page. */
 /* If the user closes the popup by clicking on the close button, the entered values won't save. We'll tell you how the "Save" button works further down. */
 
+/* ----- identify modal form fields ----- */
+
+let popupFields = document.querySelectorAll('.popup__input');
+
+/* ----- lookup profile text ----- */
+
+let profileName = document.querySelector('.profile__info-name').innerHTML;
+let profileAbout = document.querySelector('.profile__info-description').innerHTML;
+
+/* ----- update modal form fields with DOM text ----- */
+
+popupFields[0].placeholder = profileName;
+popupFields[1].placeholder = profileAbout;
 
 
 
