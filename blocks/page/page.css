@@ -1,6 +1,10 @@
 .page {
   background-color: #000000;
   color: #FFFFFF;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
   /* typography */
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -13,12 +17,10 @@
 /* anything larger than 880px, use defaults */
 
 /* resolution more than 320px, fewer than 880px */
-
-/* resolution 320px or fewer */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 880px) {
   .page {
-    width: auto;
+    height: unset;
   }
 }
 
-
+/* resolution 320px or fewer */
