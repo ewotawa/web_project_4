@@ -12,7 +12,7 @@
 
       <div class="popup">
         <div class="popup__container">
-          <img src="images/close_icon.svg" class="popup__close" alt="Close this window">
+          <button class="popup__close" type="submit"></button>
           <h2 class="popup__title">Edit profile</h2>
           <form method="get" class="popup__form" id="popup__form">
             <input class="popup__input" type="text" name="name" id="name" placeholder="Name" required>
@@ -35,12 +35,12 @@
             <div class="profile__info">
               <div class="profile__name-edit">
                 <h1 class="profile__info-name">Jacques Cousteau</h1>
-                <button class="profile__info-edit hover" aria-label="Edit profile"></button>
+                <button class="profile__info-edit hover" aria-label="Edit profile" type="submit"></button>
               </div>
               <p class="profile__info-description">Explorer</p>
             </div>
           </div>
-          <button class="profile__add-button hover"><img src="images/add-button.svg" alt="Add an image"></button>
+          <button class="profile__add-button hover" type="submit"><img src="images/add-button.svg" alt="Add an image"></button>
         </section>
 
         <section class="photo-grid">
