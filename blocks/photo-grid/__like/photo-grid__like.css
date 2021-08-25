@@ -6,6 +6,8 @@
   cursor: pointer;
   /* background image */
   background-image: url('../../../images/like.svg');
+  background-color: transparent;
+  border: 0;
 }
 
 
