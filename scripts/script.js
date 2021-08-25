@@ -1,21 +1,46 @@
+/* DOM element variable declarations */
+
+/* ----- opening and closing the popup box ----- */
+
+let modalElement = document.querySelector('.popup');
+let popupOpenButton = document.querySelector('.profile__info-edit');
+let popupCloseButton = document.querySelector('.popup__close');
+
+/* ----- identify modal form fields ----- */
+
+let popupFields = document.querySelectorAll('.popup__input');
+
+/* ----- lookup profile text ----- */
+
+let profileName = document.querySelector('.profile__info-name').innerHTML;
+let profileAbout = document.querySelector('.profile__info-description').innerHTML;
+
+/* ----- Let's find the form in the DOM ----- */
+let formElement = document.querySelector('.popup__form');
+
+
+
+
+
+
+
+
+
+
+
+
 /* Opening and Closing the Popup Box */
 
 function popupToggle() {
-  // get the element for the modal window
-  let modalElement = document.querySelector('.popup');
   // toggle the class for modal visibility
   modalElement.classList.toggle('popup_opened');
 }
 
 /* ----- open ----- */
 
-let popupOpenButton = document.querySelector('.profile__info-edit');
-
 popupOpenButton.addEventListener('click', popupToggle);
 
 /* ----- close ----- */
-
-let popupCloseButton = document.querySelector('.popup__close');
 
 popupCloseButton.addEventListener('click', popupToggle);
 
@@ -28,15 +53,6 @@ popupCloseButton.addEventListener('click', popupToggle);
 
 
 /* Form Fields */
-
-/* ----- identify modal form fields ----- */
-
-let popupFields = document.querySelectorAll('.popup__input');
-
-/* ----- lookup profile text ----- */
-
-let profileName = document.querySelector('.profile__info-name').innerHTML;
-let profileAbout = document.querySelector('.profile__info-description').innerHTML;
 
 /* ----- update modal form fields with profile text ----- */
 
@@ -52,9 +68,6 @@ popupFields[1].placeholder = profileAbout;
 
 
 /* Editing Your Name and About Me */
-
-// Let's find the form in the DOM
-let formElement = document.querySelector('.popup__form');
 
   // Next is the form submit handler, though
   // it won't submit anywhere just yet
