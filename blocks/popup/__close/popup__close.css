@@ -1,9 +1,9 @@
 .popup__close {
   padding: 0;
-  width: 40px;
-  height: 40px;
+  width: calc(40px * 1.1414213562373095); /* right 45-45-90 triangle hypotenuse */
+  height: calc(40px * 1.1414213562373095); /* right 45-45-90 triangle hypotenuse */
   float: right;
-  margin: -40px;
+  margin: calc(-1 * 40px * 1.1414213562373095);
   cursor: pointer;
   /* background image */
   background-image: url('../../../images/close_icon.svg');
@@ -25,7 +25,7 @@
 /* resolution more than 320px, fewer than 550px */
 @media screen and (max-width: 550px) {
   .popup__close {
-    margin: -40px 0;
+    margin: calc(-1* 40px * 1.1414213562373095) 0;
   }
 }
 
