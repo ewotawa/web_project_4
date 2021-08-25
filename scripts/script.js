@@ -13,8 +13,8 @@
 
   /* ----- lookup profile text ----- */
 
-  let profileName = document.querySelector('.profile__info-name').innerHTML;
-  let profileAbout = document.querySelector('.profile__info-description').innerHTML;
+  let profileName = document.querySelector('.profile__info-name').textContent;
+  let profileAbout = document.querySelector('.profile__info-description').textContent;
 
   /* ----- Let's find the form in the DOM ----- */
   let formElement = document.querySelector('.popup__form');
@@ -72,7 +72,7 @@
         // Select elements where the field values will be entered
         // Insert new values using the textContent property of the querySelector() method
         document.querySelector('.profile__info-name').textContent = nameInput.value;
-        document.querySelector('.profile__info-description').innerHTML = jobInput.value;
+        document.querySelector('.profile__info-description').textContent = jobInput.value;
 
     // close the popup window
     popupToggle();
