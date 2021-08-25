@@ -6,6 +6,9 @@
   background-color: #000000;
   color: #FFFFFF;
   cursor: pointer;
+  /* hover animation */
+  opacity: 1;
+  transition: opacity 1s ease-out;
   /* typography */
   font-style: normal;
   font-weight: normal;
@@ -13,6 +16,9 @@
   line-height: calc(22 / 18);
 }
 
+.popup__submit:hover {
+  opacity: 0.8;
+}
 
 /* ----- MEDIA QUERIES ----- */
 

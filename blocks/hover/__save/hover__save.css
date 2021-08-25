@@ -1,9 +1,0 @@
-.hover__save{
-  /* hover animation */
-  opacity: 1;
-  transition: opacity 1s ease-out;
-}
-
-.hover__save:hover {
-  opacity: 0.8;
-}

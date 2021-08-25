@@ -1,9 +1,0 @@
-.hover__like {
-  /* hover animation */
-  opacity: 1;
-  transition: opacity 1s ease-out;
-}
-
-.hover__like:hover {
-  opacity: 0.5;
-}

@@ -15,13 +15,6 @@
 
 @import url('../blocks/header/header.css');
 
-@import url('../blocks/hover/hover.css');
-@import url('../blocks/hover/__add/hover__add.css');
-@import url('../blocks/hover/__edit/hover__edit.css');
-@import url('../blocks/hover/__like/hover__like.css');
-@import url('../blocks/hover/__save/hover__save.css');
-@import url('../blocks/hover/__x/hover__x.css');
-
 @import url('../blocks/logo/logo.css');
 
 @import url('../blocks/main/main.css');

@@ -8,8 +8,15 @@
   background-image: url('../../../images/like.svg');
   background-color: transparent;
   border: 0;
+  /* hover animation */
+  opacity: 1;
+  transition: opacity 1s ease-out;
+
 }
 
+.photo-grid__like:hover {
+  opacity: 0.5;
+}
 
 /* ----- MEDIA QUERIES ----- */
 
