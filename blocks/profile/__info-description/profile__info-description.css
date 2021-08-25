@@ -1,6 +1,11 @@
 .profile__info-description {
   margin: 16px 0 0 0;
   padding: 0;
+  /* text overflow */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 415px;
   /* typography */
   font-style: normal;
   font-weight: normal;
@@ -16,6 +21,8 @@
 /* resolution more than 6600px, fewer than 880px */
 @media screen and (max-width: 660px) {
   .profile__info-description {
+    /* text overflow */
+    max-width: 282px;
     /* typography */
     font-size: 14px;
     line-height: calc(17 / 14);
