@@ -1,67 +1,52 @@
 /* DOM element variable declarations */
 
-/* ----- opening and closing the popup box ----- */
+  /* ----- opening and closing the popup box ----- */
 
-let modalElement = document.querySelector('.popup');
-let popupOpenButton = document.querySelector('.profile__info-edit');
-let popupCloseButton = document.querySelector('.popup__close');
+  let modalElement = document.querySelector('.popup');
+  let popupOpenButton = document.querySelector('.profile__info-edit');
+  let popupCloseButton = document.querySelector('.popup__close');
 
-/* ----- identify modal form fields ----- */
+  /* ----- identify modal form fields ----- */
 
-let popupFields = document.querySelectorAll('.popup__input');
+  let popupFields = document.querySelectorAll('.popup__input');
 
-/* ----- lookup profile text ----- */
+  /* ----- lookup profile text ----- */
 
-let profileName = document.querySelector('.profile__info-name').innerHTML;
-let profileAbout = document.querySelector('.profile__info-description').innerHTML;
+  let profileName = document.querySelector('.profile__info-name').innerHTML;
+  let profileAbout = document.querySelector('.profile__info-description').innerHTML;
 
-/* ----- Let's find the form in the DOM ----- */
-let formElement = document.querySelector('.popup__form');
-
-
-
-
-
-
-
-
+  /* ----- Let's find the form in the DOM ----- */
+  let formElement = document.querySelector('.popup__form');
 
 
 
 
 /* Opening and Closing the Popup Box */
 
-function popupToggle() {
-  // toggle the class for modal visibility
-  modalElement.classList.toggle('popup_opened');
-}
+  function popupToggle() {
+    // determine how many classes are included on the modal element
+    let classListLength = modalElement.classList.length;
 
-/* ----- open ----- */
+    if (classListLength == 1) {
+      // class list of 1 means that the popup is closed (doesn't have the modifier).
+      // ----- Add the modifier.
+      modalElement.classList.add('popup_opened');
+      // ----- update modal form fields with profile text
+      popupFields[0].placeholder = profileName;
+      popupFields[1].placeholder = profileAbout;
+    } else {
+      // class list length other than one indicates that modifier is present. Remove modifier to close modal.
+      modalElement.classList.remove('popup_opened');
+    }
+  }
 
-popupOpenButton.addEventListener('click', popupToggle);
+  /* ----- open ----- */
 
-/* ----- close ----- */
+  popupOpenButton.addEventListener('click', popupToggle);
 
-popupCloseButton.addEventListener('click', popupToggle);
+  /* ----- close ----- */
 
-
-
-
-
-
-
-
-
-/* Form Fields */
-
-/* ----- update modal form fields with profile text ----- */
-
-popupFields[0].placeholder = profileName;
-popupFields[1].placeholder = profileAbout;
-
-
-
-
+  popupCloseButton.addEventListener('click', popupToggle);
 
 
 
