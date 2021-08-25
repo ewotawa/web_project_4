@@ -3,6 +3,7 @@
   height: 19px;
   margin: 0;
   padding: 0;
+  cursor: pointer;
   /* background image */
   background-image: url('../../../images/like.svg');
 }
