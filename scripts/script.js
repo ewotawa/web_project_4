@@ -8,7 +8,8 @@
 
   /* ----- identify modal form fields ----- */
 
-  let popupFields = document.querySelectorAll('.popup__input');
+  let popupFieldName = document.querySelector('.popup__input_field_name');
+  let popupFieldAbout = document.querySelector('.popup__input_field_about');
 
   /* ----- lookup profile text ----- */
 
@@ -32,8 +33,8 @@
       // ----- Add the modifier.
       modalElement.classList.add('popup_opened');
       // ----- update modal form fields with profile text
-      popupFields[0].placeholder = profileName;
-      popupFields[1].placeholder = profileAbout;
+      popupFieldName.placeholder = profileName;
+      popupFieldAbout.placeholder = profileAbout;
     } else {
       // class list length other than one indicates that modifier is present. Remove modifier to close modal.
       modalElement.classList.remove('popup_opened');
