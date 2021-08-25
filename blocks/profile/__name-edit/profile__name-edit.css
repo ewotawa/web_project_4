@@ -31,7 +31,7 @@
 /* resolution less than 320px */
 @media screen and (max-width: 440px) {
   .profile__name-edit {
-    /* margin: 0 calc(48px - 19px); /* if profile__name-edit block should be centered */
-    margin: 0 0 0 calc((320px - 196px)/2 - 19px); /* if profile__info-name block should be centered */
+    margin: 0 calc(48px - 19px); /* if profile__name-edit block should be centered */
+    /* margin: 0 0 0 calc((320px - 196px)/2 - 19px); /* if profile__info-name block should be centered */
   }
 }
