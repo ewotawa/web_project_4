@@ -30,11 +30,11 @@
 
     if (classListLength == 1) {
       // class list of 1 means that the popup is closed (doesn't have the modifier).
+      // ----- update modal form fields with profile text
+      popupFieldName.textContent = profileName;
+      popupFieldAbout.textContent = profileAbout;
       // ----- Add the modifier.
       modalElement.classList.add('popup_opened');
-      // ----- update modal form fields with profile text
-      popupFieldName.placeholder = profileName;
-      popupFieldAbout.placeholder = profileAbout;
     } else {
       // class list length other than one indicates that modifier is present. Remove modifier to close modal.
       modalElement.classList.remove('popup_opened');
@@ -64,9 +64,8 @@
     // We'll explain it in more detail later.
 
     // Let's find the form fields in the DOM
-    let popupFields = document.querySelectorAll('.popup__input');
-    let nameInput = popupFields[0];
-    let jobInput = popupFields[1];
+    let nameInput = popupFieldName;
+    let jobInput = popupFieldAbout;
 
         // Get the values of each field from the corresponding value property
         // Select elements where the field values will be entered
