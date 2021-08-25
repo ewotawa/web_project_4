@@ -11,12 +11,16 @@
 
 /* anything larger than 880px, use defaults */
 
-/* resolution more than 320px, fewer than 880px */
+/* resolution more than 320px, fewer than 0px */
 @media screen and (max-width: 880px) {
   .profile__avatar-group {
-    flex-direction: column;
-    justify-content: center;
+    margin: 0 auto;
   }
 }
 
 /* resolution less than 320px */
+@media screen and (max-width: 440px) {
+  .profile__avatar-group {
+    flex-direction: column;
+  }
+}

@@ -19,14 +19,9 @@
 
 @media screen and (max-width: 880px) {
   .profile__add-button {
-    margin: 36px 0 0 0;
+    margin: 36px auto 0;
+    min-width: 282px;
   }
 }
 
 /* resolution less than 320px */
-@media screen and (max-width: 320px) {
-  .profile__add-button {
-    min-width: unset;
-    width: 100%;
-  }
-}

@@ -12,12 +12,12 @@
 /* anything larger than 880px, use defaults */
 
 /* resolution more than 320px, fewer than 880px */
-@media screen and (max-width: 880px) {
+
+
+/* resolution more than 320px, fewer than 880px */
+@media screen and (max-width: 440px) {
   .profile__avatar {
     margin: 0;
     align-self: center;
   }
 }
-
-
-/* resolution more than 320px, fewer than 880px */

@@ -17,18 +17,14 @@
 
 /* anything larger than 880px, use defaults */
 
-/* resolution more than 320px, fewer than 880px */
-@media screen and (max-width: 880px) {
+/* resolution more than 660px, fewer than 880px */
+@media screen and (max-width: 660px) {
   .profile__info-edit {
-    margin: 16px;
-  }
-}
-
-/* resolution less than 320px */
-@media screen and (max-width: 320px) {
-  .profile__info-edit {
+    margin: 0 0 0 10px;
     width: 18px;
     height: 18px;
     background-size: 7.5px 7.5px;
   }
 }
+
+/* resolution less than 320px */

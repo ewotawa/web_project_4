@@ -17,13 +17,9 @@
 /* resolution more than 320px, fewer than 880px */
 @media screen and (max-width: 880px) {
   .profile {
-    max-width: 282px;
-    margin: 0 auto;
-    padding: 38.25px 0 36px 0;
-    /* flexbox */
     flex-direction: column;
   }
 }
 
-
 /* resolution more than 320px, fewer than 880px */
+
