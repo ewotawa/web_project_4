@@ -12,10 +12,15 @@
 /* resolution more than 320px, fewer than 880px */
 @media screen and (max-width: 880px) {
   .photo-grid {
-    max-width: unset;
-    margin: 0 19px;
+    max-width: calc((282px * 2) + 17px);
+    align-items: center;
   }
 }
 
+@media screen and (max-width: 660px) {
+  .photo-grid {
+    max-width: 282px;
+  }
+}
 
 /* resolution more than 320px, fewer than 880px */
