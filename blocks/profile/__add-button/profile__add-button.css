@@ -32,8 +32,9 @@
 
 @media screen and (max-width: 880px) {
   .profile__add-button {
-    margin: 36px auto 0;
+    margin: calc(36px - 2px) auto 0; /* accommodate the border */
     min-width: 282px;
+    padding: 0;
   }
 }
 

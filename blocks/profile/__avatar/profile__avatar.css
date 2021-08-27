@@ -1,5 +1,5 @@
 .profile__avatar {
-  width: 127.5px;
+  width: calc(127.5px - 3.75px - 3.75px); /* 127.5px is size of image, but 3.75px of whitespace exists between top of block and top of image. Assume same on bottom. */
   height: auto; /* height is to size an image, not text */
   border-radius: 50%;
   object-fit: contain;

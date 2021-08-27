@@ -31,7 +31,9 @@
 /* resolution more than 320px, fewer than 550px */
 @media screen and (max-width: 550px) {
   .popup__close {
-    margin: calc(-1* 40px * 1.1414213562373095) 0;
+    width: calc(26px * 1.1414213562373095); /* right 45-45-90 triangle hypotenuse */
+    height: calc(26px * 1.1414213562373095); /* right 45-45-90 triangle hypotenuse */
+    margin: calc((-1* 26px * 1.1414213562373095) - 13.62px) 0 0 0;
   }
 }
 
