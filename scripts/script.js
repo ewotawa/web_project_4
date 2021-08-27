@@ -13,8 +13,8 @@
 
   /* ----- lookup profile text ----- */
 
-  let profileName = document.querySelector('.profile__info-name').textContent;
-  let profileAbout = document.querySelector('.profile__info-description').textContent;
+  let profileName = document.querySelector('.profile__info-name');
+  let profileAbout = document.querySelector('.profile__info-description');
 
   /* ----- Let's find the form in the DOM ----- */
   let formElement = document.querySelector('.popup__form');
@@ -31,8 +31,8 @@
     if (classListLength == 1) {
       // class list of 1 means that the popup is closed (doesn't have the modifier).
       // ----- update modal form fields with profile text
-      popupFieldName.textContent = profileName;
-      popupFieldAbout.textContent = profileAbout;
+      popupFieldName.value = profileName.textContent;
+      popupFieldAbout.value = profileAbout.textContent;
       // ----- Add the modifier.
       modalElement.classList.add('popup_opened');
     } else {
@@ -55,23 +55,15 @@
 
 /* Editing Your Name and About Me */
 
-  // Next is the form submit handler, though
-  // it won't submit anywhere just yet
+  // form submit handler
   function handleFormSubmit(evt) {
     evt.preventDefault();
-    // This line stops the browser from submitting the form in the default way.
-    // Having done so, we can define our own way of submitting the form.
-    // We'll explain it in more detail later.
 
-    // Let's find the form fields in the DOM
-    let nameInput = popupFieldName;
-    let jobInput = popupFieldAbout;
-
-        // Get the values of each field from the corresponding value property
-        // Select elements where the field values will be entered
-        // Insert new values using the textContent property of the querySelector() method
-        document.querySelector('.profile__info-name').textContent = nameInput.value;
-        document.querySelector('.profile__info-description').textContent = jobInput.value;
+    // Get the values of each field from the corresponding value property
+    // Select elements where the field values will be entered
+    // Insert new values using the textContent property of the querySelector() method
+    profileName.textContent = popupFieldName.value;
+    profileAbout.textContent = popupFieldAbout.value;
 
     // close the popup window
     popupToggle();
