@@ -2,15 +2,17 @@
   padding: 0;
   width: calc(40px * 1.1414213562373095); /* right 45-45-90 triangle hypotenuse */
   height: calc(40px * 1.1414213562373095); /* right 45-45-90 triangle hypotenuse */
-  float: right;
-  margin: calc(-1 * 40px * 1.1414213562373095);
+  /* use absolute position instead of float */
+  position: absolute;
+  top: calc(-1 * 40px * 1.1414213562373095);
+  right: calc(-1 * 40px * 1.1414213562373095);
   cursor: pointer;
   /* background image */
   background-image: url('../../../images/close_icon.svg');
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
-  background-color: #000000;
+  background-color: transparent;
   border: 0;
   /* hover animation */
   opacity: 1;
@@ -33,7 +35,8 @@
   .popup__close {
     width: calc(26px * 1.1414213562373095); /* right 45-45-90 triangle hypotenuse */
     height: calc(26px * 1.1414213562373095); /* right 45-45-90 triangle hypotenuse */
-    margin: calc((-1* 26px * 1.1414213562373095) - 13.62px) 0 0 0;
+    top: calc((-1* 26px * 1.1414213562373095) - 13.62px);
+    right: 0;
   }
 }
 
