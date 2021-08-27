@@ -26,18 +26,16 @@
 
   function popupToggle() {
     // determine how many classes are included on the modal element
-    let classListLength = modalElement.classList.length;
-
-    if (classListLength == 1) {
-      // class list of 1 means that the popup is closed (doesn't have the modifier).
+    if (modalElement.classList.contains('popup_opened')) {
+      // Modifier is present. Remove modifier to close modal.
+      modalElement.classList.remove('popup_opened');
+    } else {
+      // popup is closed (doesn't have the modifier).
       // ----- update modal form fields with profile text
       popupFieldName.value = profileName.textContent;
       popupFieldAbout.value = profileAbout.textContent;
       // ----- Add the modifier.
       modalElement.classList.add('popup_opened');
-    } else {
-      // class list length other than one indicates that modifier is present. Remove modifier to close modal.
-      modalElement.classList.remove('popup_opened');
     }
   }
 
